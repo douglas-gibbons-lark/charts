@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: {{ template "fluentd-cloudwatch.daemonset.apiVersion" . }}
 kind: DaemonSet
 metadata:
   name: {{ template "fluentd-cloudwatch.fullname" . }}
